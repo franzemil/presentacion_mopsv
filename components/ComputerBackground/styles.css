@@ -1,0 +1,161 @@
+.wrapper {
+  font-size: 4px;
+  float: left;
+}
+
+.imac,
+.notebook,
+.ipad {
+  float: left;
+}
+
+.imac {
+  position: relative;
+  margin: 30px 30px 50px;
+  width: 120em;
+}
+.imac .display {
+  width: 100em;
+  height: 60em;
+  margin: 0 auto;
+  background-color: royalBlue;
+  border: 2.5em solid #333;
+  border-radius: 2.5em 2.5em 0 0;
+}
+.imac .display:before {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 50%;
+  margin-left: -2.5px;
+  width: 5px;
+  height: 5px;
+  background: #ccc;
+  border-radius: 100%;
+}
+.imac .bottom {
+  position: relative;
+  width: 105em;
+  height: 11em;
+  background: #cccccc;
+  margin: 0 auto 60px;
+  border-radius: 0 0 2.5em 2.5em;
+}
+.imac .bottom:before {
+  content: '';
+  position: absolute;
+  top: 11em;
+  left: 50%;
+  margin-left: -11em;
+  width: 22em;
+  height: 12em;
+  background: #bdbdbd;
+}
+.imac .bottom:after {
+  content: '';
+  position: absolute;
+  top: 22em;
+  left: 50%;
+  margin-left: -15em;
+  width: 30em;
+  height: 1em;
+  background: #8e8e8e;
+  border-radius: 1em;
+}
+
+.notebook {
+  position: relative;
+  font-size: 4px;
+  width: 200em;
+  margin: 50px auto;
+}
+.notebook .display {
+  /* width: 77.5em; */
+  width: 155em;
+  height: 105em;
+  margin: 0 auto;
+  border: 5em solid #333;
+  -moz-border-radius: 5em 5em 0 0;
+  -webkit-border-radius: 5em;
+  border-radius: 5em 5em 0 0;
+}
+.notebook .display:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.notebook .bottom {
+  position: relative;
+  width: 200em;
+  height: 5em;
+  background: #cccccc;
+  margin: 0 auto;
+}
+.notebook .bottom:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  top: 0px;
+  left: 50%;
+  margin-left: -12em;
+  width: 24em;
+  height: 2em;
+  background: #8e8e8e;
+  -moz-border-radius: 0 0 3em 3em;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 3em 3em;
+}
+.notebook .bottom:after {
+  content: '';
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  right: 0;
+  border-top: 2em solid #959595;
+  border-left: 4em solid transparent;
+  border-right: 4em solid transparent;
+}
+
+.ipad {
+  position: relative;
+  margin: 30px;
+  width: 50em;
+}
+.ipad:after {
+  content: '';
+  position: absolute;
+  bottom: 2.5px;
+  left: 50%;
+  margin-left: -1em;
+  width: 1.5em;
+  height: 1.5em;
+  background: #000;
+  border-radius: 100%;
+}
+.ipad .display {
+  width: 30em;
+  height: 40em;
+  background-color: royalBlue;
+  border: 2.5em solid #333;
+  border-radius: 2em;
+  margin: 0 auto;
+}
+.ipad .display:before {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 50%;
+  margin-left: -2.5px;
+  width: 5px;
+  height: 5px;
+  background: #ccc;
+  border-radius: 100%;
+}

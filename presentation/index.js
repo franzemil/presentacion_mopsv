@@ -11,11 +11,15 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Appear,
+  Layout
 } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
+import ComputerBackground from "../components/ComputerBackground";
+import rrhhImage from '../assets/rrhh/rrhh_one.png';
 
 // Require CSS
 require("normalize.css");
@@ -33,7 +37,7 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} contentWidth={1400} contentHeight={900} >
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Spectacle Boilerplate
@@ -60,11 +64,33 @@ export default class Presentation extends React.Component {
             <ListItem>Item 4</ListItem>
           </List>
         </Slide>
+
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>
           </BlockQuote>
+        </Slide>
+        <Slide>
+          <Heading size={3} textColor="secondary" caps>RECURSOS HUMANOS</Heading>
+          <ComputerBackground background={rrhhImage} />
+          <List>
+            <ListItem>Item 3</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+            <ListItem>Item 4</ListItem>
+          </List>
         </Slide>
       </Deck>
     );
